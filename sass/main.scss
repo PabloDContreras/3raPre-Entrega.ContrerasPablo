@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    background-color: rgb(0, 0, 0);
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    .nombreNonpa{
+        margin-left: 20px;
+        color: white;
+    }
+}
+nav{
+    a{
+        font-weight: 700;
+        padding: 10px;
+        color: white;
+    }
+}
+nav{
+    a:hover{
+        color: rgb(124, 124, 124);
+    }
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+.fotoNonpa{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
