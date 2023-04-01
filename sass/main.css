@@ -1,3 +1,4 @@
+/* pagina index */
 * {
   margin: 0;
   font-family: sans-serif;
@@ -23,17 +24,20 @@ header {
 
 .logo .nombreNonpa {
   margin-left: 20px;
-  color: white;
+  color: yellow;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 900;
 }
 
 nav a {
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
   padding: 10px;
   color: white;
 }
 
 nav a:hover {
-  color: rgb(124, 124, 124);
+  color: yellow;
 }
 
 @media (max-width: 700px) {
@@ -43,9 +47,161 @@ nav a:hover {
   nav {
     padding: 10px 0px;
   }
+  a {
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    padding: 10px 0px;
+  }
+  a {
+    font-weight: 700;
+    font-size: 10px;
+  }
 }
 .fotoNonpa {
   width: 100%;
   height: auto;
   margin-top: 30px;
+}
+
+h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+  text-align: center;
+  color: yellow;
+  margin-top: 100px;
+  background-color: black;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+  }
+}
+/* pagina contacto */
+div h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 30px;
+}
+div h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 5px;
+}
+div h4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.formRegistro {
+  width: 400px;
+  background-color: black;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  box-shadow: 7px 13px 37px #000;
+}
+
+@media (max-width: 700px) {
+  .formRegistro {
+    padding: 12px;
+    margin-top: 70px;
+    font-size: 10px;
+  }
+}
+.formRegistro h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: yellow;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.formRegistro input {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .formRegistro h3 {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .formRegistro input {
+    font-size: 10px;
+  }
+}
+.entrada {
+  color: white;
+  align-items: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 3px;
+  gap: 10px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .entrada {
+    font-size: 10px;
+  }
+}
+.controles {
+  width: 100%;
+  margin: 5px;
+  padding: 3px;
+  background-color: black;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .controles {
+    font-size: 10px;
+  }
+}
+.formRegistro .boton {
+  width: 100%;
+  background-color: yellow;
+  border-radius: 10px;
+  font-size: 16px;
+  align-content: center;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 8px;
+  color: black;
+  border: 5px solid yellow;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .formRegistro .boton {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */
