@@ -208,3 +208,48 @@ div{
         }
     }
 }
+
+/* pagina historia */
+.fotoHistoria{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+@media(max-width: 700px){
+    .fotoHistoria{
+    margin-top: 15px;
+    }
+}
+.historia{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.historia{
+    .contandoHistoria{
+        margin-top: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 10px;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        gap: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+}
+.historia{
+    .contandoHistoria:hover{
+        background: radial-gradient(yellow, black);
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 700;
+        box-shadow: 7px 13px 37px #000;
+        color: white;
+    }
+}
+@media(max-width: 700px){
+    .historia{
+        grid-template-columns: 1fr;
+    }
+}
