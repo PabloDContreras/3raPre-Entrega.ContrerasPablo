@@ -116,6 +116,7 @@ div{
     padding: 20px;
     margin: auto;
     margin-top: 100px;
+    margin-bottom: 150px    ;
     text-align: center;
     border-radius: 10px;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -223,6 +224,8 @@ div{
 .historia{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 150px;
+    margin-top: 100px;
 }
 .historia{
     .contandoHistoria{
@@ -251,5 +254,50 @@ div{
 @media(max-width: 700px){
     .historia{
         grid-template-columns: 1fr;
+    }
+}
+
+/* Footer */
+.footerContainer{
+    display:grid;
+    background-color: black;
+    padding: 30px;
+    justify-content: center;
+}
+.footerContainer{
+    .footeCaja{
+        display: flex;
+
+    }
+}
+.footerItem{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: yellow;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footerLogo{
+    img{
+    padding: 12px;
+    margin-left: 42px;
+    justify-content: center;
+    }
+}
+@media(max-width: 700px){
+    .footerItem{
+        font-size: 8px;
+    }
+}
+@media(max-width: 700px){
+    .footerLogo{
+        img{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 25px;
+        height: auto;
+        padding: 5px;
+        margin-left: 18px;
+        }
     }
 }
