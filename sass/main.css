@@ -52,13 +52,7 @@ nav a:hover {
     font-size: 14px;
   }
 }
-@media (max-width: 375px) {
-  header {
-    flex-direction: column;
-  }
-  nav {
-    padding: 10px 0px;
-  }
+@media (min-width: 375px) {
   a {
     font-weight: 700;
     font-size: 10px;
@@ -70,6 +64,13 @@ nav a:hover {
   margin-top: 30px;
 }
 
+@media (min-width: 375px) {
+  .fotoNonpa {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+  }
+}
 h1 {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 900;
@@ -220,6 +221,20 @@ div h4 {
   margin-top: 5px;
 }
 
+@media (max-width: 700px) {
+  div h2 {
+    font-weight: 400;
+    font-size: 40px;
+  }
+  div h3 {
+    font-weight: 400;
+    font-size: 30px;
+  }
+  div h4 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
 .formRegistro {
   width: 400px;
   background-color: black;
@@ -235,11 +250,16 @@ div h4 {
   box-shadow: 7px 13px 37px #000;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 375px) {
   .formRegistro {
-    padding: 12px;
     margin-top: 70px;
     font-size: 10px;
+    width: 280px;
+  }
+}
+@media (min-width: 701px) {
+  .formRegistro {
+    width: 400px;
   }
 }
 .formRegistro h3 {
@@ -257,7 +277,7 @@ div h4 {
   color: white;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 375px) {
   .formRegistro h3 {
     font-size: 18px;
     margin-bottom: 18px;
@@ -429,7 +449,7 @@ div h4 {
 }
 .Slider ul {
   display: flex;
-  animation: cambio 25s infinite alternate linear;
+  animation: cambio 20s infinite alternate linear;
   width: 400%;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -443,6 +463,13 @@ div h4 {
   height: 100%;
 }
 
+@media (max-width: 700px) {
+  .Slider ul {
+    animation: none;
+    margin-left: 12 px;
+    margin-top: 30px;
+  }
+}
 @keyframes cambio {
   0% {
     margin-left: 0;
@@ -478,15 +505,17 @@ div h4 {
   justify-content: center;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 700px) {
   .contenedorShow {
     display: grid;
   }
 }
-@media (max-width: 1080px) {
+@media (max-width: 700px) {
   .showItem1 {
     display: flex;
     grid-template-columns: 1fr;
+    height: 250px;
+    width: 200px;
   }
 }
 .showItem1 {
@@ -513,6 +542,15 @@ div h4 {
   animation: rotar 2s linear infinite;
 }
 
+@media (min-width: 375px), (max-width: 700px) {
+  .showItem1::before {
+    height: 250px;
+    width: 200px;
+    background-image: none;
+    animation: none;
+    position: relative;
+  }
+}
 @keyframes rotar {
   from {
     transform: rotate(0deg);
